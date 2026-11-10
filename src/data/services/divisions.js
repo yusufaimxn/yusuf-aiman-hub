@@ -1,0 +1,38 @@
+export const serviceDivisions = [
+  {
+    id: 'web',
+    code: 'WEB',
+    name: 'Website Development',
+    slug: 'website-development',
+    description: 'Professional websites designed to establish your digital presence, communicate your business and connect with your audience.',
+    count: 10,
+    icon: 'grid',
+  },
+  {
+    id: 'web-applications',
+    code: 'WAS',
+    name: 'Web Application and Systems Development',
+    slug: 'web-applications',
+    description: 'Custom web applications and business systems designed to manage data, automate workflows and support business operations.',
+    count: 16,
+    icon: 'spark',
+  },
+  {
+    id: 'desktop',
+    code: 'DSK',
+    name: 'Desktop Software Development',
+    slug: 'desktop-software',
+    description: 'Purpose built desktop applications and computer based software designed for productivity, data processing and specialised workflows.',
+    count: 10,
+    icon: 'book',
+  },
+  {
+    id: 'mobile',
+    code: 'MOB',
+    name: 'Mobile Application Development',
+    slug: 'mobile-applications',
+    description: 'Mobile and progressive web applications that connect users, services and business operations across supported devices.',
+    count: 12,
+    icon: 'grid',
+  },
+];
