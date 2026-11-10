@@ -155,7 +155,7 @@ function PageShell({ children, title, description }) {
     meta.content = description || 'Yusuf Aiman Digital Hub | Technology, learning and digital resources made easier to understand.';
     window.scrollTo({ top: 0, behavior: 'instant' });
   }, [title, description]);
-  return <><Header /><main>{children}</main><Footer /><ResourceDownloadModal /></>;
+  return <><Header /><main>{children}</main><Footer /></>;
 }
 
 function SectionHeading({ eyebrow, title, text, action }) {
@@ -215,7 +215,7 @@ function ProductAction({ product, variant = 'primary' }) {
     const fileType = product.fileType || 'pdf';
     const downloadLabel = 'Download';
     const downloadName = product.downloadName || `${product.slug}.${fileType}`;
-    return <button className={`button button-${variant}`} type="button" onClick={() => openResourceDownload(product)}>{downloadLabel} <Icon name="arrow" /></button>;
+    return <a className={`button button-${variant}`} href={product.fileUrl} download={downloadName}>{downloadLabel} <Icon name="arrow" /></a>;
   }
   return <Button href="/contact" variant={variant}>Register interest</Button>;
 }
